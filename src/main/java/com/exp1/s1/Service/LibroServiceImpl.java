@@ -43,4 +43,19 @@ public class LibroServiceImpl implements LibroService {
         libroRepository.deleteById(id);
     }
 
+    @Override
+    public List<Libro> findByTitulo(String titulo) {
+        return libroRepository.findByTituloContainingIgnoreCase(titulo);
+    }
+
+    @Override
+    public List<Libro> findByAutor(String autor) {
+        return libroRepository.findByAutorContainingIgnoreCase(autor);
+    }
+
+    @Override
+    public List<Libro> findByGenero(String genero) {
+        return libroRepository.findByGeneroContainingIgnoreCase(genero);
+    }
+
 }

@@ -54,4 +54,19 @@ public class LibroController {
         libroService.deleteLibro(id);
     }
 
+    @GetMapping("/buscar/titulo/{titulo}")
+    public List<Libro> buscarPorTitulo(@PathVariable String titulo) {
+        return libroService.findByTitulo(titulo);
+    }
+
+    @GetMapping("/buscar/autor/{autor}")
+    public List<Libro> buscarPorAutor(@PathVariable String autor) {
+        return libroService.findByAutor(autor);
+    }
+
+    @GetMapping("/buscar/genero/{genero}")
+    public List<Libro> buscarPorGenero(@PathVariable String genero) {
+        return libroService.findByGenero(genero);
+    }
+
 }

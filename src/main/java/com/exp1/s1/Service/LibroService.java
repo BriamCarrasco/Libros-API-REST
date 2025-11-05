@@ -11,6 +11,9 @@ public interface LibroService {
     Libro createLibro(Libro libro);
     Libro updateLibro(long id, Libro libro);
     void deleteLibro(long id);
+    List<Libro> findByTitulo(String titulo);
+    List<Libro> findByAutor(String autor);
+    List<Libro> findByGenero(String genero);
     
 }
 
