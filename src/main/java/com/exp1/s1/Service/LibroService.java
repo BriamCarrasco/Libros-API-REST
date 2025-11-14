@@ -1,4 +1,4 @@
-package com.exp1.s1.Service;
+package com.exp1.s1.service;
 
 import java.util.Optional;
 import java.util.List;

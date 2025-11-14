@@ -1,8 +1,7 @@
-package com.exp1.s1.Service;
+package com.exp1.s1.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.exp1.s1.model.Libro;
 import com.exp1.s1.repository.LibroRepository;
@@ -12,9 +11,11 @@ import java.util.Optional;
 @Service
 public class LibroServiceImpl implements LibroService {
 
-    @Autowired
-    private LibroRepository libroRepository;
+    private final LibroRepository libroRepository;
 
+    public LibroServiceImpl(LibroRepository libroRepository) {
+        this.libroRepository = libroRepository;
+    }
 
     @Override
     public List<Libro> getAllLibros() {

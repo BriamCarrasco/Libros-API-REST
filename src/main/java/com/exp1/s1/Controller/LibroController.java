@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
-import com.exp1.s1.Service.LibroService;
 import org.springframework.web.bind.annotation.GetMapping;
 import com.exp1.s1.model.Libro;
+import com.exp1.s1.service.LibroService;
+
 import java.util.List;
 
 @RestController
