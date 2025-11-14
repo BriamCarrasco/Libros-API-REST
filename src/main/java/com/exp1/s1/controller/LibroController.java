@@ -1,4 +1,4 @@
-package com.exp1.s1.AAAAAAAAAAAAA;
+package com.exp1.s1.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
